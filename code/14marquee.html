@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE-edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>
+            marquee tag
+        </title>
+    </head>
+    <body>
+        <!--height attribute changes size of text
+            width attribute changes starting point of marquee
+            default width is screen width
+            align is useless here (not because it's red lol)
+            loop is no of times marquee plays , by default it is endless
+            Vspace shows actual vertical length of marquee
+            Hspace shows actual horizontal length of marquee
+            (width is from right, Hspace is from left)
+            scrollamount is the distance in pixels,scrolldelay is the time in miliseconds
+            together scrollamount and scrolldelay give speed of marquee
+            direction can be up,down,left or right
+            Behavior has following four values
+            scroll: Scrolls the content continuously.
+            slide: Scrolls the content once and stops at the end.
+            (means if content is "awwab" in scroll it will stop when starting a reaches end of screen
+             and in slide it will stop when ending b reaches end of screen)
+            alternate: Scrolls the content continuously, changing direction when it reaches the end.
+            (default start is left to right)
+            alternate-reverse: Similar to alternate, but starts with the opposite direction.
+            (may not work)-->
+        <marquee Behavior="alternate"
+                 direction="right" 
+                 scrollamount="50" 
+                 Hspace="200" 
+                 Vspace="200" 
+                 Bgcolor="blue" 
+                 loop="10" 
+                 align="center" 
+                 height="400" 
+                 width="600">
+                 This is marquee text</marquee>
+    </body>
+</html>
